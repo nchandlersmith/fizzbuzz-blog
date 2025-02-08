@@ -11,4 +11,10 @@ class FizzbuzzTest {
         String result = fizzbuzz.run(1);
         assertThat(result).isEqualTo("1");
     }
+    @Test
+    void run_when2_then2() {
+        Fizzbuzz fizzbuzz = new Fizzbuzz();
+        String result = fizzbuzz.run(2);
+        assertThat(result).isEqualTo("2");
+    }
 }
