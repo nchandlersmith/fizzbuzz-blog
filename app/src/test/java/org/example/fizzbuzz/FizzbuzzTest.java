@@ -35,4 +35,10 @@ class FizzbuzzTest {
         String result = fizzbuzz.run(5);
         assertThat(result).isEqualTo("Buzz");
     }
+    @Test
+    void run_when10_Buzz() {
+        Fizzbuzz fizzbuzz = new Fizzbuzz();
+        String result = fizzbuzz.run(10);
+        assertThat(result).isEqualTo("Buzz");
+    }
 }
